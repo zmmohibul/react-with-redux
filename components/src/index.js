@@ -10,34 +10,35 @@ const root = ReactDOM.createRoot(el);
 
 const App = () => {
   return (
-    <div className="ui container comments">
+    <div className="ui container">
       <ApprovalCard>
         <CommentDetail
-          author="Sam"
-          timeAgo="Today at 2 AM"
-          imgSrc={faker.image.avatar()}
-          content="Nice blog post!"
+          author="Amir"
+          date="Today at 2 AM"
+          content="Awesome Post!"
+          avatar={faker.image.avatar()}
         />
       </ApprovalCard>
 
       <ApprovalCard>
         <CommentDetail
-          author="Alex"
-          timeAgo="Today at 10 AM"
-          imgSrc={faker.image.avatar()}
-          content="Pretty Cool!"
+          author="Khalil"
+          date="Yesterday at 10 AM"
+          content="Love the content"
+          avatar={faker.image.avatar()}
         />
       </ApprovalCard>
 
       <ApprovalCard>
         <CommentDetail
-          author="Jane"
-          timeAgo="Today at 5 PM"
-          imgSrc={faker.image.avatar()}
-          content="Awesome!!!"
+          author="Biral"
+          date="Yesterday at 5 AM"
+          content="NICE!"
+          avatar={faker.image.avatar()}
         />
       </ApprovalCard>
     </div>
   );
 };
+
 root.render(<App />);
